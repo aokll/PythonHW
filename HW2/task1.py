@@ -5,4 +5,18 @@
 # # 5 -> 1 0 1 1 0
 # # 2
 
-#print(random(0,1)*10)
+import random
+n = int(input())
+x = 0
+x1 = 0
+
+r = range(0,n)
+for i in r:
+    a = random.randint(0,1)
+    print(a, end=' ')
+    if a == 0:
+        x=x+1
+    else: x1=x1+1
+
+if x < x1: print(f"-> {x}")    
+else: print(f"-> {x1}")

@@ -9,3 +9,14 @@
 #     1 2 3 4 5
 #     3
 #     -> 1  
+
+x = int(input())
+
+a = [1,2,3,4,5,5]
+z = 0
+
+for i in range(len(a)):
+    if x == a[i]:
+        z = z + 1
+
+print(z)

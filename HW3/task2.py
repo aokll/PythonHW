@@ -10,6 +10,3 @@
 #     6
 #     -> 5
 
-word = input()
-
-print(f's{list(word)}')

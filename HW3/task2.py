@@ -9,4 +9,15 @@
 #     1 2 3 4 5
 #     6
 #     -> 5
+value = int(input())
 
+items = [1,2,3,4,5]
+
+found = 0
+
+found = items[0] # найденное значение (первоначально первое)
+for item in range(len(items)):
+    if abs(items[item] - value) < abs(found - value):
+        found = items[item]
+
+print(found) 

@@ -6,3 +6,11 @@
 
 # 2 2
 #     4 
+
+def sum(a,b):
+    if b == 0:
+        return a
+    else: 
+        return sum(a,b-1)+1   
+
+print(sum(10,6))

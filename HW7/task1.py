@@ -37,7 +37,8 @@ for i in range(len(list1)):
             y = y + 1
     if x != y:
         print(f"Ритма нет")
-        print(f"{list} Парам пам-пам") 
+        print(f"{list} Парам пам-пам")
+     
         break
        
 if x == y:

@@ -16,18 +16,35 @@
 # пам-пам рам-пам пам
 
 list = []
-
-def one(x = []):
-    return list.split()
-
-def two(x = []):
-    return list.split("-")
-
-def z(x = []):
-    q = {"у","е","ы","а","о","э","я","и","ю"}
-    
-    return 
+list1 = []
+q = {"у","е","ы","а","о","э","я","и","ю"}
+x = y = 0
 
 text = input()
 list = text
-print(one(text))    
+list1 = list.split()
+print(list1)
+
+
+for i in range(len(list1[0])):
+    if list1[0][i] in q:
+        x = x + 1
+
+for i in range(len(list1)):
+    y = 0
+    for j in range(len(list1[i])):
+       if list1[i][j] in q:
+            y = y + 1
+    if x != y:
+        print(f"Ритма нет")
+        print(f"{list} Парам пам-пам") 
+        break
+       
+if x == y:
+     print("Ритм есть")
+     print(f"{list} Пам парам")            
+
+
+
+
+
